@@ -10,8 +10,14 @@ on:
       - main
 
 jobs:
-  build:
 
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello world
+        run: echo "Hello world"
+      
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repository
